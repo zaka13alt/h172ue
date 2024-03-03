@@ -19,8 +19,6 @@ impl EpxTlsStream {
         Err(jerr!("Use EpoxyClient.connect_tls() instead."))
     }
 
-    // shut up
-    #[allow(clippy::too_many_arguments)]
     pub async fn connect(
         tcp: &EpoxyClient,
         onopen: Function,
